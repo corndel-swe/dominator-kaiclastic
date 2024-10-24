@@ -13,7 +13,11 @@
  */
 export function rollercoaster(age, height) {
   // TODO: Replace null with the correct boolean expression
-  const canRide = null
+  let canRide = false
+  if (age >= 12 && height>150){
+    canRide= true
+
+  }
 
   return canRide // Don't change this line
 }
