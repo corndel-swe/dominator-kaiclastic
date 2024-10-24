@@ -14,7 +14,9 @@
  */
 export function permissions(isAdmin, isMember, isOwner) {
   // TODO: Replace null with the correct boolean expression
-  const canEdit = null
-
+  let canEdit = false
+    if(isAdmin||isMember&&isOwner){
+    canEdit = true
+}
   return canEdit // Don't change this line
 }
